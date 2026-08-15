@@ -1,0 +1,456 @@
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+    .main-nav {
+        gap: 16px;
+    }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+    .container {
+        width: min(100% - 30px, 1180px);
+    }
+
+
+    .site-header {
+        height: 70px;
+    }
+
+
+    .menu-toggle {
+        display: flex;
+    }
+
+
+    .main-nav {
+
+        position: absolute;
+
+        top: 70px;
+        left: 0;
+        right: 0;
+
+        background: #ffffff;
+
+        display: none;
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 0;
+
+        padding: 20px 25px;
+
+        border-bottom: 1px solid #eeeeee;
+    }
+
+
+    .main-nav.open {
+        display: flex;
+    }
+
+
+    .main-nav a {
+        padding: 10px 0;
+    }
+
+
+    .main-nav .nav-cta {
+        text-align: center;
+
+        margin-top: 8px;
+    }
+
+}
+
+
+/* =========================
+   HERO RESPONSIVE
+========================= */
+
+@media (max-width: 700px) {
+
+    .hero {
+
+        min-height: calc(100vh - 70px);
+    }
+
+
+    .hero-container {
+
+        padding-top: 70px;
+
+        padding-bottom: 70px;
+    }
+
+
+    .hero h1 {
+
+        font-size: clamp(46px, 13vw, 68px);
+
+        letter-spacing: -2px;
+    }
+
+
+    .hero-description {
+
+        font-size: 16px;
+
+        max-width: 100%;
+    }
+
+
+    .hero-trust {
+
+        gap: 18px;
+
+        margin-top: 50px;
+    }
+
+
+    .hero-scroll {
+
+        display: none;
+    }
+
+}
+
+
+
+/* =========================
+   SERVICES RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .services-heading {
+
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+
+        align-items: start;
+    }
+
+
+    .service-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .service-card {
+
+        min-height: 280px;
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .section {
+
+        padding: 80px 0;
+    }
+
+
+    .section-heading {
+
+        margin-bottom: 38px;
+    }
+
+
+    .section-heading h2 {
+
+        font-size: 42px;
+
+        letter-spacing: -1.8px;
+    }
+
+
+    .service-card {
+
+        min-height: 270px;
+
+        padding: 28px;
+    }
+
+
+    .service-card h3 {
+
+        font-size: 25px;
+    }
+
+}
+
+
+/* =========================
+   FLEET RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .car-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .car-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .car-image {
+
+        height: 250px;
+    }
+
+}
+
+
+
+
+/* =========================
+   ABOUT RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .about-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+    }
+
+
+    .about-image {
+
+        height: 500px;
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .about-image {
+
+        height: 380px;
+    }
+
+
+    .about-content h2 {
+
+        font-size: 42px;
+
+        letter-spacing: -1.8px;
+    }
+
+
+    .benefits-list {
+
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* =========================
+   BOOKING RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .booking-box {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .booking-content {
+
+        padding: 55px;
+    }
+
+
+    .booking-form-wrapper {
+
+        padding: 45px;
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .booking-content {
+
+        padding: 40px 25px;
+    }
+
+
+    .booking-form-wrapper {
+
+        padding: 35px 25px;
+    }
+
+
+    .form-row {
+
+        grid-template-columns: 1fr;
+
+        gap: 0;
+    }
+
+
+    .form-heading {
+
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 8px;
+    }
+
+
+    .booking-content h2 {
+
+        font-size: 44px;
+
+        letter-spacing: -1.8px;
+    }
+
+}
+
+
+/* =========================
+   CONTACT RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .contact-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 55px;
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .contact-grid {
+
+        gap: 40px;
+    }
+
+
+    .contact-form-wrapper {
+
+        padding: 28px 20px;
+    }
+
+
+    .contact-content h2 {
+
+        font-size: 42px;
+
+        letter-spacing: -1.8px;
+    }
+
+}
+
+
+
+/* =========================
+   FOOTER RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .footer-top {
+
+        grid-template-columns:
+            1.5fr 1fr 1fr;
+
+        gap: 40px;
+    }
+
+
+    .footer-brand {
+
+        grid-column: 1 / -1;
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .site-footer {
+
+        padding-top: 55px;
+    }
+
+
+    .footer-top {
+
+        grid-template-columns: 1fr 1fr;
+
+        gap: 40px;
+
+        padding-bottom: 45px;
+    }
+
+
+    .footer-brand {
+
+        grid-column: 1 / -1;
+    }
+
+
+    .footer-bottom {
+
+        padding: 20px 0;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        justify-content: center;
+    }
+
+
+    .legal-links {
+
+        flex-wrap: wrap;
+
+        gap: 12px 18px;
+    }
+
+}
+
+
