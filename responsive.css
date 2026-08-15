@@ -450,7 +450,534 @@
 
         gap: 12px 18px;
     }
-
 }
 
 
+
+
+
+
+
+
+/* =========================================================
+   FLEET
+========================================================= */
+
+.fleet {
+    padding: 120px 0;
+    background: #f7f8fa;
+}
+
+.fleet-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 50px;
+    margin-bottom: 60px;
+}
+
+.fleet-heading .section-intro {
+    max-width: 480px;
+    margin: 0;
+    color: #666;
+    line-height: 1.8;
+}
+
+.fleet-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.fleet-card {
+    overflow: hidden;
+    background: #fff;
+    border: 1px solid #e7e7e7;
+    border-radius: 24px;
+    transition: .35s ease;
+}
+
+.fleet-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 25px 60px rgba(0,0,0,.09);
+}
+
+
+/* Gallery */
+
+.fleet-gallery {
+    position: relative;
+    padding: 14px;
+    background: #eef0f2;
+}
+
+.fleet-main-image {
+    height: 330px;
+    overflow: hidden;
+    border-radius: 17px;
+}
+
+.fleet-main-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform .5s ease;
+}
+
+.fleet-card:hover .fleet-main-image img {
+    transform: scale(1.04);
+}
+
+.fleet-small-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-top: 12px;
+}
+
+.fleet-small-images img {
+    width: 100%;
+    height: 115px;
+    display: block;
+    object-fit: cover;
+    border-radius: 13px;
+}
+
+
+/* Badge */
+
+.fleet-badge {
+    position: absolute;
+    top: 28px;
+    left: 28px;
+    padding: 9px 16px;
+    background: #111;
+    color: #fff;
+    border-radius: 50px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+}
+
+
+/* Content */
+
+.fleet-content {
+    padding: 34px;
+}
+
+.fleet-label {
+    margin: 0 0 10px;
+    color: #777;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .13em;
+    text-transform: uppercase;
+}
+
+.fleet-content h3 {
+    margin: 0 0 16px;
+    color: #111;
+    font-size: 30px;
+    line-height: 1.15;
+}
+
+.fleet-content > p {
+    color: #666;
+    font-size: 15px;
+    line-height: 1.75;
+}
+
+
+/* Details */
+
+.fleet-details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin: 25px 0;
+}
+
+.fleet-details div {
+    padding: 14px;
+    background: #f5f6f7;
+    border-radius: 12px;
+}
+
+.fleet-details strong {
+    display: block;
+    margin-bottom: 4px;
+    color: #111;
+    font-size: 13px;
+}
+
+.fleet-details span {
+    color: #888;
+    font-size: 11px;
+}
+
+
+/* Prices */
+
+.fleet-prices {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 25px 0;
+    padding: 18px 0;
+    border-top: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.fleet-prices div {
+    text-align: center;
+}
+
+.fleet-prices span {
+    display: block;
+    margin-bottom: 5px;
+    color: #888;
+    font-size: 11px;
+}
+
+.fleet-prices strong {
+    color: #111;
+    font-size: 17px;
+}
+
+
+/* Extra information */
+
+.fleet-extra {
+    margin-bottom: 25px;
+}
+
+.fleet-extra p {
+    margin: 7px 0;
+    color: #777;
+    font-size: 13px;
+    line-height: 1.65;
+}
+
+.fleet-extra strong {
+    color: #222;
+}
+
+
+/* Button */
+
+.fleet-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    padding: 14px 20px;
+    min-width: 210px;
+    background: #111;
+    color: #fff;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 700;
+    transition: .3s ease;
+}
+
+.fleet-button span {
+    font-size: 20px;
+}
+
+.fleet-button:hover {
+    background: #333;
+    transform: translateX(3px);
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .fleet {
+        padding: 90px 0;
+    }
+
+    .fleet-heading {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .fleet-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .fleet {
+        padding: 70px 0;
+    }
+
+    .fleet-content {
+        padding: 24px;
+    }
+
+    .fleet-main-image {
+        height: 240px;
+    }
+
+    .fleet-small-images img {
+        height: 95px;
+    }
+
+    .fleet-content h3 {
+        font-size: 25px;
+    }
+
+    .fleet-details {
+        grid-template-columns: 1fr;
+    }
+
+    .fleet-prices {
+        grid-template-columns: 1fr;
+    }
+
+    .fleet-prices div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px 0;
+    }
+
+    .fleet-prices span {
+        margin: 0;
+    }
+
+    .fleet-button {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================
+   LONG-TERM RENTAL
+========================================= */
+
+.longterm {
+    padding: 120px 0;
+    background: #fff;
+}
+
+.longterm-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 50px;
+    margin-bottom: 60px;
+}
+
+.longterm-heading > p {
+    max-width: 480px;
+    margin: 0;
+    color: #666;
+    line-height: 1.8;
+}
+
+.longterm-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.longterm-card {
+    overflow: hidden;
+    background: #f7f8fa;
+    border: 1px solid #e6e6e6;
+    border-radius: 24px;
+    transition: .35s ease;
+}
+
+.longterm-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 25px 60px rgba(0,0,0,.08);
+}
+
+.longterm-image {
+    position: relative;
+    height: 330px;
+    padding: 14px;
+}
+
+.longterm-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    border-radius: 17px;
+}
+
+.longterm-image span {
+    position: absolute;
+    top: 28px;
+    left: 28px;
+    padding: 9px 16px;
+    background: #111;
+    color: #fff;
+    border-radius: 50px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+}
+
+.longterm-content {
+    padding: 34px;
+}
+
+.longterm-label {
+    margin: 0 0 10px;
+    color: #777;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .13em;
+    text-transform: uppercase;
+}
+
+.longterm-content h3 {
+    margin: 0 0 16px;
+    color: #111;
+    font-size: 30px;
+    line-height: 1.15;
+}
+
+.longterm-content > p {
+    color: #666;
+    font-size: 15px;
+    line-height: 1.75;
+}
+
+.longterm-details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin: 25px 0;
+}
+
+.longterm-details div {
+    padding: 15px;
+    background: #fff;
+    border-radius: 12px;
+}
+
+.longterm-details strong {
+    display: block;
+    margin-bottom: 5px;
+    color: #111;
+    font-size: 14px;
+}
+
+.longterm-details span {
+    color: #888;
+    font-size: 11px;
+}
+
+.longterm-info {
+    margin-bottom: 25px;
+}
+
+.longterm-info p {
+    margin: 8px 0;
+    color: #777;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.longterm-info strong {
+    color: #222;
+}
+
+.longterm-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    min-width: 210px;
+    padding: 14px 20px;
+    background: #111;
+    color: #fff;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 700;
+    transition: .3s ease;
+}
+
+.longterm-button:hover {
+    background: #333;
+}
+
+.longterm-button span {
+    font-size: 20px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 900px) {
+
+    .longterm {
+        padding: 90px 0;
+    }
+
+    .longterm-heading {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .longterm-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .longterm {
+        padding: 70px 0;
+    }
+
+    .longterm-content {
+        padding: 24px;
+    }
+
+    .longterm-image {
+        height: 240px;
+    }
+
+    .longterm-content h3 {
+        font-size: 25px;
+    }
+
+    .longterm-details {
+        grid-template-columns: 1fr;
+    }
+
+    .longterm-button {
+        width: 100%;
+    }
+}
